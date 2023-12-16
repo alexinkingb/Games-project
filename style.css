@@ -14,24 +14,6 @@ body {
     justify-content: center;
 }
 
-@media (max-width: 991px) {
-    .menu-bg {
-        background-color: #323335;
-    }
-
-    .menu-btn {
-        background-color: #fff;
-    }
-
-    .nav-link:nth-child(2) {
-        margin: 0 !important;
-    }
-
-    .btn-purple {
-        display: block;
-    }
-}
-
 .hero-title {
     font-size: 64px;
     line-height: 1.2;
@@ -50,16 +32,6 @@ body {
 
 .btn-purple:hover {
     background-color: #753dca;
-}
-
-@media (max-width: 1400px) {
-    .hero-title {
-        font-size: 48px;
-    }
-
-    .hero-desc {
-        font-size: 20px;
-    }
 }
 
 .gta-img {
@@ -119,6 +91,31 @@ body {
     background-color: #fcb8ff;
 }
 
+.footer-link:nth-child(2) {
+    margin: 0 24px;
+}
+
+.logo {
+    animation-name: rotation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.logo:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 @media (max-width: 420px) {
     .first-card-row {
         flex-direction: column;
@@ -135,5 +132,41 @@ body {
 
     .hero-title {
         font-size: 38px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-link:nth-child(2) {
+        margin: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .menu-bg {
+        background-color: #323335;
+    }
+
+    .menu-btn {
+        background-color: #fff;
+    }
+
+    .nav-link:nth-child(2) {
+        margin: 0 !important;
+    }
+
+    .btn-purple {
+        display: block;
+    }
+}
+
+@media (max-width: 1400px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-desc {
+        font-size: 20px;
     }
 }
