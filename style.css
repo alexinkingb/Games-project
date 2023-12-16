@@ -102,12 +102,18 @@ body {
     justify-content: center;
     align-items: flex-end;
     border-radius: 56px;
+    margin-top: 16px;
     background-color: #69adfd;
     transition: 0.2s ease-in;
     overflow-y: clip;
 }
 
-
+.dota-img img {
+    object-fit: contain;
+    width: 100%;
+    object-position: center;
+    height: 100%;
+}
 
 .dota-img:hover {
     background-color: #fcb8ff;
