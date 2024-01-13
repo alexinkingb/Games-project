@@ -1,0 +1,34 @@
+extends ../layouts/main-layout
+
+block content 
+
+    //- Контент главной страницы
+    main
+        section.main-content
+            .container-fluid
+            .row
+                .col-xxl-7.col-xl-6.col-lg-6.col-md-12
+                // Блок с текстом
+                .hero-section.pb-5
+                    h1.hero-title.text-white.m-0
+                    | &Ucy;&dcy;&icy;&vcy;&icy;&tcy;&iecy;&lcy;&softcy;&ncy;&ycy;&jcy; &mcy;&icy;&rcy; 
+                    br
+                    |  &kcy;&ocy;&mcy;&pcy;&softcy;&yucy;&tcy;&iecy;&rcy;&ncy;&ycy;&khcy; &icy;&gcy;&rcy;
+                    p.hero-desc.text-white.my-5
+                    | &Pcy;&ocy;&zcy;&ncy;&acy;&kcy;&ocy;&mcy;&softcy;&tcy;&iecy;&scy;&softcy; &scy; &scy;&acy;&mcy;&ycy;&mcy;&icy; &pcy;&ocy;&pcy;&ucy;&lcy;&yacy;&rcy;&ncy;&ycy;&mcy;&icy; &scy;&rcy;&iecy;&dcy;&icy; 
+                    br
+                    |  &gcy;&iecy;&jcy;&mcy;&iecy;&rcy;&ocy;&vcy; &ocy;&ncy;&lcy;&acy;&jcy;&ncy;-&icy;&gcy;&rcy;&acy;&mcy;&icy;.
+                    |                                 &Ucy;&zcy;&ncy;&acy;&jcy;&tcy;&iecy;, &chcy;&tcy;&ocy; &ncy;&ocy;&vcy;&ocy;&gcy;&ocy; 
+                    br
+                    |  &pcy;&rcy;&ocy;&icy;&scy;&khcy;&ocy;&dcy;&icy;&tcy; &vcy; &vcy;&icy;&rcy;&tcy;&ucy;&acy;&lcy;&softcy;&ncy;&ocy;&mcy; &mcy;&icy;&rcy;&iecy;.
+                    a.btn.btn-purple.text-white(href='#') &Ucy;&zcy;&ncy;&acy;&tcy;&softcy; &bcy;&ocy;&lcy;&softcy;&shcy;&iecy;
+                .col-xxl-5.col-xl-6.col-lg-6.col-md-12
+                // Колонка для карточек с играми
+                .card-games.d-flex.flex-column
+                    .first-card-row.d-flex.justify-content-between
+                    .gta-img
+                        img(src='img/gta.png' alt='')
+                    .fortnite-img
+                        img(src='img/fort.png' alt='')
+                    .dota-img
+                    img(src='img/dota.png' alt='')
