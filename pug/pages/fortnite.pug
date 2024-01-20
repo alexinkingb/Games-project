@@ -1,0 +1,56 @@
+extends ../layouts/pages-layout
+
+block title 
+    - var title ='Фортнайт'
+
+block content
+    header 
+        .dota-box 
+            .container-xl.p-0
+                .container
+                    .row 
+                        .col-xxl-6.col-xl-6.col-lg-6.col-md-12 
+                            // Колонка для блока с текстом
+                            .hero-section.pt-5 
+                                h1.hero-title.text-white.m-0 Fortnite 
+                                p.hero-desc.text-white.my-5 
+                                    | ...
+                                p.hero-desc.text-white 
+                                    | ...
+            .img-mobile 
+                img(src='img/pic/fortnite-big.png' alt='')     
+        main
+            section.gallery.pt-5
+                .container-xl.p-0
+                    .container
+                        h1.gallery-title Галерея 
+                        // Swiper
+                        .swiper.mySwiper 
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src="img/pic/slider/fortnite-slide-1.png", alt="")
+                                .swiper-slide
+                                    img(src="img/pic/slider/fortnite-slide-2.png", alt="")
+                            .swipper-button-next
+                            .swipper-button-prev 
+            section.articles.py-5 
+                .container-xl.p-0 
+                    .container 
+                        h1.gallery-title Статьи
+                        .row 
+                            .col-md-4 
+                                .card 
+                                    .card-body
+                                        img.card-img-top.mb-4(src="img/pic/articles/fortnite-article-1.png", alt="")
+                                        h5.card-title ...
+                                        p.card-text 
+                                            | ...
+                                        a.btn.btn-primary(href="#") Читать
+                            .col-md-4 
+                                .card 
+                                    .card-body
+                                    //- djsbwqbuvdsdajbbe 2
+                            .col-md-4 
+                                .card 
+                                    .card-body
+                                    //- djsbwqbuvdsdajbbe 3
